@@ -2,6 +2,7 @@
 <?php
 
 use Greeflas\StaticAnalyzer\Command\ClassAuthorStat;
+use Greeflas\StaticAnalyzer\Command\ClassInfo;
 use Symfony\Component\Console\Application;
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -9,6 +10,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $application = new Application('PHP Static Analyzer', '1.0.0');
 
 $application->add(new ClassAuthorStat());
+$application->add(new ClassInfo());
 
 $exitCode = $application->run();
 
