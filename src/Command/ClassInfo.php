@@ -78,3 +78,4 @@ class ClassInfo extends Command
         }
     }
 }
+
